@@ -1,13 +1,13 @@
-package com.namager.viveros;
+package com.manager.viveros;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ViverosApplication {
+public class CruiserApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ViverosApplication.class, args);
+		SpringApplication.run(CruiserApplication.class, args);
 	}
 
 }
