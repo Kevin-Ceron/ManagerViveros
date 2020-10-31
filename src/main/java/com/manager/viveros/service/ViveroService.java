@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.manager.viveros;
+package com.manager.viveros.service;
 
+import com.manager.viveros.model.Vivero;
 import java.util.List;
 
 /**

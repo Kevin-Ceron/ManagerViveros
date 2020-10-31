@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.manager.viveros;
+package com.manager.viveros.repository;
 
+import com.manager.viveros.model.Vivero;
 import java.util.List;
 import org.springframework.data.repository.Repository;
-
 /**
  *
  * @author alfar
