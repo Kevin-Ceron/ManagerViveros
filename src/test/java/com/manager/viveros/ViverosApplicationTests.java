@@ -1,4 +1,4 @@
-package com.namager.viveros;
+package com.manager.viveros;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
