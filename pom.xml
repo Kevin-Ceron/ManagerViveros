@@ -8,14 +8,14 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.namager</groupId>
+	<groupId>com.manager</groupId>
 	<artifactId>viveros</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>viveros</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 
 	<dependencies>
