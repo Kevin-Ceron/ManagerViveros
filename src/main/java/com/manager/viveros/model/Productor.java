@@ -5,16 +5,26 @@
  */
 package com.manager.viveros.model;
 
+import javax.persistence.*;
+
 /**
  *
  * @author Lenovo
  */
+@Entity
+@Table(name = "productores")
 public class Productor {
+    
   
-  private int idproductores;
-  private String nombre;
-  private String apellido;
-  private String telefono;
+    @Id
+    @Column
+    private int idproductores;
+    @Column
+    private String nombre;
+    @Column
+    private String apellido;
+    @Column
+    private String telefono;
 
     public Productor(int idproductores, String nombre, String apellido, String telefono) {
         this.idproductores = idproductores;
@@ -22,6 +32,11 @@ public class Productor {
         this.apellido = apellido;
         this.telefono = telefono;
     }
+
+    public Productor() {
+    }
+    
+    
 
     public int getIdproductores() {
         return idproductores;
