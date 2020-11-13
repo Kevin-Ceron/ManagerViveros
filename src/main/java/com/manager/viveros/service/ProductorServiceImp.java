@@ -38,12 +38,17 @@ public class ProductorServiceImp implements ProductorService {
 
     @Override
     public Productor edit(Productor P) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return repository.save(P);
     }
+    
 
     @Override
     public Productor delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Productor P = repository.findById(id);
+        if (P != null){
+            repository.delete(P);
+        }
+        return P;
     }
     
     

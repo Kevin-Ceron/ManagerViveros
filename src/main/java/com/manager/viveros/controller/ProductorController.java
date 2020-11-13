@@ -9,9 +9,7 @@ import com.manager.viveros.model.Productor;
 import com.manager.viveros.service.ProductorService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  *
@@ -29,6 +27,20 @@ public class ProductorController {
         return service.Listar();
     }
     
+    @PostMapping("/agregar")
+    public Productor agregar(@RequestBody Productor P){
+        return service.add(P);
+    }
     
+    @GetMapping("/listarid")
+    public Productor listarid(@RequestHeader int id){
+        return service.listarId(id);
+    }
+    
+    @DeleteMapping("/delete")
+    public Productor borrar(@RequestHeader int id){
+        return service.delete(id);
+    }
+            
     
 }
