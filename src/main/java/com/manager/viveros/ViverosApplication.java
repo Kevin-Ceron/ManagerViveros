@@ -18,7 +18,6 @@ public class ViverosApplication implements CommandLineRunner{
     @Override
     public void run(String... args) throws Exception {
         LOG.info("Hola Mundo");
-        LOG.info("Ivan es Gay");
     }
 
 }
