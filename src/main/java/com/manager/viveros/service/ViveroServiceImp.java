@@ -38,7 +38,7 @@ public class ViveroServiceImp implements ViveroService{
 
     @Override
     public Vivero edit(Vivero v) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return repository.save(v);
     }
 
     @Override
